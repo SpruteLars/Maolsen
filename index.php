@@ -5,6 +5,6 @@
         <title>index.php</title>
     </head>
     <body>
-        <a href="Maolsen/labs/lab1/index.html">Trykk her</a>
+        <a href="labs/lab1/index.html">Trykk her</a>
     </body>
 </html>
