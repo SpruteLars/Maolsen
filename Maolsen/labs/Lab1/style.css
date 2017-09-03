@@ -1,0 +1,20 @@
+body {
+    text-align: center;
+}
+nav a{
+    text-decoration: none;
+    border: 5px !important;
+    transition: 2s;
+}
+
+#picture {
+    border-radius: 100px 100px 100px 100px;
+}
+nav a:hover {
+    font-size: 2em;
+  
+}
+#logo {
+    float: left;
+    
+}
