@@ -16,9 +16,9 @@
         
         $list = array($symbol,$symbol2,$symbol3,$symbol4,$symbol5);
         
-        $randomNumber = rand(0,4);
-        $randomNumber1 = rand(0,4);
-        $randomNumber2 = rand(0,4);
+        $randomNumber = rand(0,3);
+        $randomNumber1 = rand(0,3);
+        $randomNumber2 = rand(0,3);
         
         echo "<img id='reel1' src='img/$list[$randomNumber].png' alt='$list[$randomNumber]' width='50px'/>";
         echo "<img id='reel2' src='img/$list[$randomNumber2].png' alt='$list[$randomNumber2]' width='50px'/>";
@@ -37,8 +37,6 @@
                 echo "<p id='output'>You won 500 points</p>";
             }else if ($randomNumber == 2) {
                 echo "<p id='output'>You won 200 points</p>";
-            }else if ($randomNumber == 3){
-                echo "<p id='output'>You won 100 points</p>";
             }else{
                 echo "<p id='output'>You won 1 points</p>";
             }
