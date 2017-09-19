@@ -1,11 +1,16 @@
 table{
     border:solid 2px;
     width: 50px;
-   
+   background-color: white;
     display: inline-table;
     table-layout: fixed;
+   
     
 }
+tr{
+  font-weight: bold; 
+}
+
 .winter{
     background-image: url("winter/snow-man.jpg");
 }
