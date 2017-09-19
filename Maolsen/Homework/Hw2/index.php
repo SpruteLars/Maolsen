@@ -259,7 +259,7 @@
       
           echo "<p><form id='input'><input type='submit' value='Random month'/></form></p>";
         
-       
+       echo "<div>This is a Calendar that shows the date for each month when monday is the first day of the month</div>";
     echo "</body>";
      ?>
 </html>
