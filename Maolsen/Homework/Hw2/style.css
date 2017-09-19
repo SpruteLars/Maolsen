@@ -29,5 +29,8 @@ div {
     background-image: url("summer/summer2.jpg");
 }
 body{
-    
+   width:100%;
+}
+h1 {
+    font-weight: bolder;
 }
