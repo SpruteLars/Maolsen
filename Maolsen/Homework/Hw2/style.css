@@ -10,6 +10,9 @@ table{
 tr{
   font-weight: bold; 
 }
+h1 {
+    
+}
 
 .winter{
     background-image: url("winter/snow-man.jpg");
@@ -22,4 +25,7 @@ tr{
 }
 .summer{
     background-image: url("summer/summer.jpg");
+}
+body{
+    
 }

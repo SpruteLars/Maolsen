@@ -10,17 +10,18 @@
        
         
         $month = array('January','February','March','April','May','June','July','August','September','Oktober','November','December');
-        $season = array('fall','summer','spring','winter');
-        $reversed = array_reverse($season);
+        $season = ('fall summer spring winter');
+        $fixed = explode(" ", $season);
+        $reversed = array_reverse($fixed);
         $days = array('Mon','Tue','Wed','Thu','Fri','Sat','Sun');
         $randomNumber1 = rand(0,11);
         if ($randomNumber1 < 2 || $randomNumber1 == 11) {
             echo "<body class='$reversed[0]'>";
-        }elseif ($randomNumber1 >= 3 && $randomNumber1 < 6){
+        }elseif ($randomNumber1 >= 2 && $randomNumber1 < 5){
             echo "<body class='$reversed[1]'>";
-        }elseif ($randomNumber1 >= 6 && $randomNumber1 < 9){
+        }elseif ($randomNumber1 >= 5 && $randomNumber1 < 8){
             echo "<body class='$reversed[2]'>";
-        }elseif ($randomNumber1 >= 9 && $randomNumber1 < 11){
+        }elseif ($randomNumber1 >= 8 && $randomNumber1 < 11){
             echo "<body class='$reversed[3]'>";
         }
        
@@ -36,200 +37,227 @@
         if ($randomNumber1== 0) {
            
              for ($value; $value <= 31; $value++) {
-                 echo "<table><tr><td>$value</td></tr></table>";
+                 
                      
                       if ($value%7==0){
-                          echo "<br></p>";
-                          
+                          echo "<table><tr><td class='sun'>$value</td></tr></table>";
+                          echo "<br>";
+                      }else{
+                          echo "<table><tr><td>$value</td></tr></table>";
                       }
                       
                       
                  
             }
-             echo "<h1>$month[$randomNumber1]<h1>";
+             echo "<h1>$month[$randomNumber1]</h1>";
         }
         if ($randomNumber1== 1) {
             
                for ($value; $value < 29  ; $value++) {
-                    echo "<table><tr><td>$value</td></tr></table>";
+                    
                      
                       if ($value%7==0){
+                          echo "<table><tr><td class='sun'>$value</td></tr></table>";
                           echo "<br></p>";
-                          
+                      }else{
+                          echo "<table><tr><td>$value</td></tr></table>";
                       }
                       
                       
                  
             }
-             echo "<h1>$month[$randomNumber1]<h1>";
+             echo "<h1>$month[$randomNumber1]</h1>";
         }
         
         
          if ($randomNumber1== 2) {
             
                  for ($value; $value <= 31; $value++) {
-                 echo "<table><tr><td>$value</td></tr></table>";
+                    
                      
                       if ($value%7==0){
-                          echo "<br></p>";
-                          
+                          echo "<table><tr><td class='sun'>$value</td></tr></table>";
+                          echo "<br>";
+                      }else{
+                          echo "<table><tr><td>$value</td></tr></table>";
                       }
                       
                       
                  
             }
-             echo "<h1>$month[$randomNumber1]<h1>";
+             echo "<h1>$month[$randomNumber1]</h1>";
         }
+        
         
          if ($randomNumber1== 3) {
             
            
            for ($value; $value <= 31; $value++) {
-                echo "<table><tr><td>$value</td></tr></table>";
+                
                      
                       if ($value%7==0){
-                          echo "<br></p>";
-                          
+                          echo "<table><tr><td class='sun'>$value</td></tr></table>";
+                          echo "<br>";
+                      }else{
+                          echo "<table><tr><td>$value</td></tr></table>";
                       }
                       
                       
                  
             }
-             echo "<h1>$month[$randomNumber1]<h1>";
+             echo "<h1>$month[$randomNumber1]</h1>";
         }
         
          if ($randomNumber1== 4) {
              
             
                  for ($value; $value <= 30; $value++) {
-                  echo "<table><tr><td>$value</td></tr></table>";
+                 
                      
                       if ($value%7==0){
-                          echo "<br></p>";
-                          
+                          echo "<table><tr><td class='sun'>$value</td></tr></table>";
+                          echo "<br>";
+                      }else{
+                          echo "<table><tr><td>$value</td></tr></table>";
                       }
                       
                       
                  
             }
-             echo "<h1>$month[$randomNumber1]<h1>";
+             echo "<h1>$month[$randomNumber1]</h1>";
         }
         
          if ($randomNumber1== 5) {
              
            
             for ($value; $value <= 31; $value++) {
-                 echo "<table><tr><td>$value</td></tr></table>";
+                
                      
                       if ($value%7==0){
-                          echo "<br></p>";
-                          
+                          echo "<table><tr><td class='sun'>$value</td></tr></table>";
+                          echo "<br>";
+                      }else{
+                          echo "<table><tr><td>$value</td></tr></table>";
                       }
                       
                       
                  
             }
-             echo "<h1>$month[$randomNumber1]<h1>";
+             echo "<h1>$month[$randomNumber1]</h1>";
         }
         
          if ($randomNumber1== 6) {
             
           
             for ($value; $value <= 30; $value++) {
-                  echo "<table><tr><td>$value</td></tr></table>";
+                 
                      
                       if ($value%7==0){
-                          echo "<br></p>";
-                          
+                          echo "<table><tr><td class='sun'>$value</td></tr></table>";
+                          echo "<br>";
+                      }else{
+                          echo "<table><tr><td>$value</td></tr></table>";
                       }
                       
                       
                  
             }
-             echo "<h1>$month[$randomNumber1]<h1>";
+             echo "<h1>$month[$randomNumber1]</h1>";
         }
         
          if ($randomNumber1== 7) {
             
            
             for ($value; $value <= 31; $value++) {
-                echo "<table><tr><td>$value</td></tr></table>";
+                
                      
                       if ($value%7==0){
-                          echo "<br></p>";
-                          
+                          echo "<table><tr><td class='sun'>$value</td></tr></table>";
+                          echo "<br>";
+                      }else{
+                          echo "<table><tr><td>$value</td></tr></table>";
                       }
                       
                       
                  
             }
-             echo "<h1>$month[$randomNumber1]<h1>";
+             echo "<h1>$month[$randomNumber1]</h1>";
         }
         
          if ($randomNumber1== 8) {
             
             
             for ($value; $value <= 30; $value++) {
-                  echo "<table><tr><td>$value</td></tr></table>";
+                 
                      
                       if ($value%7==0){
-                          echo "<br></p>";
-                          
+                          echo "<table><tr><td class='sun'>$value</td></tr></table>";
+                          echo "<br>";
+                      }else{
+                          echo "<table><tr><td>$value</td></tr></table>";
                       }
                       
                       
                  
             }
-             echo "<h1>$month[$randomNumber1]<h1>";
-           }
+             echo "<h1>$month[$randomNumber1]</h1>";
+        }
         
          if ($randomNumber1== 9) {
            
             for ($value; $value <= 31; $value++) {
-                 echo "<table><tr><td>$value</td></tr></table>";
+                
                      
                       if ($value%7==0){
-                          echo "<br></p>";
-                          
+                          echo "<table><tr><td class='sun'>$value</td></tr></table>";
+                          echo "<br>";
+                      }else{
+                          echo "<table><tr><td>$value</td></tr></table>";
                       }
                       
                       
                  
             }
-             echo "<h1>$month[$randomNumber1]<h1>";
+             echo "<h1>$month[$randomNumber1]</h1>";
         }
         
          if ($randomNumber1==  10) {
             
             
             for ($value; $value <= 30; $value++) {
-                 echo "<table><tr><td>$value</td></tr></table>";
+                 
                      
                       if ($value%7==0){
-                          echo "<br></p>";
-                          
+                          echo "<table><tr><td class='sun'>$value</td></tr></table>";
+                          echo "<br>";
+                      }else{
+                          echo "<table><tr><td>$value</td></tr></table>";
                       }
                       
                       
                  
             }
-             echo "<h1>$month[$randomNumber1]<h1>";
+             echo "<h1>$month[$randomNumber1]</h1>";
         }
         
          if ($randomNumber1== 11) {
             for ($value; $value <= 31; $value++) {
-                  echo "<table><tr><td>$value</td></tr></table>";
+                  
                      
                       if ($value%7==0){
-                          echo "<br></p>";
-                          
+                          echo "<table><tr><td class='sun'>$value</td></tr></table>";
+                          echo "<br>";
+                      }else{
+                          echo "<table><tr><td>$value</td></tr></table>";
                       }
                       
                       
                  
             }
-             echo "<h1>$month[$randomNumber1]<h1>";
+             echo "<h1>$month[$randomNumber1]</h1>";
         }
+      
+          echo "<p><form id='input'><input type='submit' value='Random month'/></form></p>";
         
        
     echo "</body>";
