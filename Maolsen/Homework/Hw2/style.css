@@ -1,0 +1,20 @@
+table{
+    border:solid 2px;
+    width: 50px;
+   
+    display: inline-table;
+    table-layout: fixed;
+    
+}
+.winter{
+    background-image: url("winter/snow-man.jpg");
+}
+.spring {
+    background-image: url("spring/spring.jpg");
+}
+.fall{
+    background-image: url("fall/fall.jpg");
+}
+.summer{
+    background-image: url("summer/summer.jpg");
+}

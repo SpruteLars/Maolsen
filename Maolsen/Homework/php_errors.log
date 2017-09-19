@@ -1,0 +1,10 @@
+[19-Sep-2017 03:38:23 UTC] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ';' in /home/ubuntu/workspace/Maolsen/Maolsen/Homework/Hw2/index.php on line 29
+[19-Sep-2017 03:48:28 UTC] PHP Parse error:  syntax error, unexpected '>' in /home/ubuntu/workspace/Maolsen/Maolsen/Homework/Hw2/index.php on line 162
+[19-Sep-2017 04:10:57 UTC] PHP Fatal error:  Undefined constant 'n' in /home/ubuntu/workspace/Maolsen/Maolsen/Homework/Hw2/index.php on line 33
+[19-Sep-2017 04:10:57 UTC] PHP Stack trace:
+[19-Sep-2017 04:10:57 UTC] PHP   1. {main}() /home/ubuntu/workspace/Maolsen/Maolsen/Homework/Hw2/index.php:0
+[19-Sep-2017 04:47:39 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/ubuntu/workspace/Maolsen/Maolsen/Homework/Hw2/index.php on line 174
+[19-Sep-2017 07:01:28 UTC] PHP Fatal error:  Call to undefined function length() in /home/ubuntu/workspace/Maolsen/Maolsen/Homework/Hw2/index.php on line 28
+[19-Sep-2017 07:01:28 UTC] PHP Stack trace:
+[19-Sep-2017 07:01:28 UTC] PHP   1. {main}() /home/ubuntu/workspace/Maolsen/Maolsen/Homework/Hw2/index.php:0
+[19-Sep-2017 07:05:41 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/ubuntu/workspace/Maolsen/Maolsen/Homework/Hw2/index.php on line 32
