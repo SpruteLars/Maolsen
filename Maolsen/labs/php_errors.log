@@ -270,3 +270,68 @@
 [05-Sep-2017 18:39:19 UTC] PHP 256. printout() /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab2/index.php:45
 [05-Sep-2017 18:44:08 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab2/index.php on line 63
 [07-Sep-2017 18:20:06 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab2/index.php on line 32
+[23-Sep-2017 05:55:24 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';' in /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab3/index.php on line 14
+[23-Sep-2017 06:28:44 UTC] PHP Warning:  Missing argument 1 for displayHand(), called in /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab3/index.php on line 39 and defined in /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab3/index.php on line 16
+[23-Sep-2017 06:28:44 UTC] PHP Stack trace:
+[23-Sep-2017 06:28:44 UTC] PHP   1. {main}() /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab3/index.php:0
+[23-Sep-2017 06:28:44 UTC] PHP   2. displayHand() /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab3/index.php:39
+[23-Sep-2017 06:29:04 UTC] PHP Warning:  Missing argument 1 for displayHand(), called in /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab3/index.php on line 39 and defined in /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab3/index.php on line 16
+[23-Sep-2017 06:29:04 UTC] PHP Stack trace:
+[23-Sep-2017 06:29:04 UTC] PHP   1. {main}() /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab3/index.php:0
+[23-Sep-2017 06:29:04 UTC] PHP   2. displayHand() /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab3/index.php:39
+[23-Sep-2017 06:29:42 UTC] PHP Warning:  Missing argument 1 for displayHand(), called in /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab3/index.php on line 39 and defined in /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab3/index.php on line 16
+[23-Sep-2017 06:29:42 UTC] PHP Stack trace:
+[23-Sep-2017 06:29:42 UTC] PHP   1. {main}() /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab3/index.php:0
+[23-Sep-2017 06:29:42 UTC] PHP   2. displayHand() /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab3/index.php:39
+[23-Sep-2017 06:30:53 UTC] PHP Warning:  Missing argument 1 for displayHand(), called in /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab3/index.php on line 39 and defined in /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab3/index.php on line 16
+[23-Sep-2017 06:30:53 UTC] PHP Stack trace:
+[23-Sep-2017 06:30:53 UTC] PHP   1. {main}() /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab3/index.php:0
+[23-Sep-2017 06:30:53 UTC] PHP   2. displayHand() /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab3/index.php:39
+[23-Sep-2017 19:56:50 UTC] PHP Warning:  Missing argument 1 for displayHand(), called in /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab3/index.php on line 21 and defined in /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab3/index.php on line 16
+[23-Sep-2017 19:56:50 UTC] PHP Stack trace:
+[23-Sep-2017 19:56:50 UTC] PHP   1. {main}() /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab3/index.php:0
+[23-Sep-2017 19:56:50 UTC] PHP   2. displayHand() /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab3/index.php:21
+[23-Sep-2017 19:58:01 UTC] PHP Warning:  Missing argument 1 for displayHand(), called in /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab3/index.php on line 21 and defined in /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab3/index.php on line 16
+[23-Sep-2017 19:58:01 UTC] PHP Stack trace:
+[23-Sep-2017 19:58:01 UTC] PHP   1. {main}() /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab3/index.php:0
+[23-Sep-2017 19:58:01 UTC] PHP   2. displayHand() /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab3/index.php:21
+[23-Sep-2017 19:59:05 UTC] PHP Warning:  Missing argument 1 for displayHand(), called in /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab3/index.php on line 21 and defined in /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab3/index.php on line 16
+[23-Sep-2017 19:59:05 UTC] PHP Stack trace:
+[23-Sep-2017 19:59:05 UTC] PHP   1. {main}() /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab3/index.php:0
+[23-Sep-2017 19:59:05 UTC] PHP   2. displayHand() /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab3/index.php:21
+[23-Sep-2017 20:06:22 UTC] PHP Warning:  array_pop() expects parameter 1 to be array, integer given in /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab3/index.php on line 18
+[23-Sep-2017 20:06:22 UTC] PHP Stack trace:
+[23-Sep-2017 20:06:22 UTC] PHP   1. {main}() /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab3/index.php:0
+[23-Sep-2017 20:06:22 UTC] PHP   2. displayHand() /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab3/index.php:22
+[23-Sep-2017 20:06:22 UTC] PHP   3. array_pop() /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab3/index.php:18
+[23-Sep-2017 20:06:22 UTC] PHP Warning:  array_pop() expects parameter 1 to be array, integer given in /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab3/index.php on line 18
+[23-Sep-2017 20:06:22 UTC] PHP Stack trace:
+[23-Sep-2017 20:06:22 UTC] PHP   1. {main}() /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab3/index.php:0
+[23-Sep-2017 20:06:22 UTC] PHP   2. displayHand() /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab3/index.php:22
+[23-Sep-2017 20:06:22 UTC] PHP   3. array_pop() /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab3/index.php:18
+[23-Sep-2017 20:06:22 UTC] PHP Warning:  array_pop() expects parameter 1 to be array, integer given in /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab3/index.php on line 18
+[23-Sep-2017 20:06:22 UTC] PHP Stack trace:
+[23-Sep-2017 20:06:22 UTC] PHP   1. {main}() /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab3/index.php:0
+[23-Sep-2017 20:06:22 UTC] PHP   2. displayHand() /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab3/index.php:22
+[23-Sep-2017 20:06:22 UTC] PHP   3. array_pop() /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab3/index.php:18
+[23-Sep-2017 20:06:22 UTC] PHP Warning:  array_pop() expects parameter 1 to be array, integer given in /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab3/index.php on line 18
+[23-Sep-2017 20:06:22 UTC] PHP Stack trace:
+[23-Sep-2017 20:06:22 UTC] PHP   1. {main}() /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab3/index.php:0
+[23-Sep-2017 20:06:22 UTC] PHP   2. displayHand() /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab3/index.php:22
+[23-Sep-2017 20:06:22 UTC] PHP   3. array_pop() /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab3/index.php:18
+[23-Sep-2017 20:06:22 UTC] PHP Warning:  array_pop() expects parameter 1 to be array, integer given in /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab3/index.php on line 18
+[23-Sep-2017 20:06:22 UTC] PHP Stack trace:
+[23-Sep-2017 20:06:22 UTC] PHP   1. {main}() /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab3/index.php:0
+[23-Sep-2017 20:06:22 UTC] PHP   2. displayHand() /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab3/index.php:22
+[23-Sep-2017 20:06:22 UTC] PHP   3. array_pop() /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab3/index.php:18
+[23-Sep-2017 20:07:48 UTC] PHP Parse error:  syntax error, unexpected 'displayHand' (T_STRING), expecting ',' or ';' in /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab3/index.php on line 24
+[23-Sep-2017 20:08:50 UTC] PHP Warning:  Missing argument 1 for displayHand(), called in /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab3/index.php on line 23 and defined in /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab3/index.php on line 16
+[23-Sep-2017 20:08:50 UTC] PHP Stack trace:
+[23-Sep-2017 20:08:50 UTC] PHP   1. {main}() /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab3/index.php:0
+[23-Sep-2017 20:08:50 UTC] PHP   2. displayHand() /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab3/index.php:23
+[23-Sep-2017 20:08:50 UTC] PHP Warning:  Missing argument 1 for displayHand(), called in /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab3/index.php on line 25 and defined in /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab3/index.php on line 16
+[23-Sep-2017 20:08:50 UTC] PHP Stack trace:
+[23-Sep-2017 20:08:50 UTC] PHP   1. {main}() /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab3/index.php:0
+[23-Sep-2017 20:08:50 UTC] PHP   2. displayHand() /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab3/index.php:25
+[23-Sep-2017 20:52:56 UTC] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab3/index.php on line 19
+[23-Sep-2017 21:18:04 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab3/index.php on line 67
