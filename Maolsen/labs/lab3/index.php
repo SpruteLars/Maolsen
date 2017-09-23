@@ -29,7 +29,8 @@
           if ($cardValue == 0) {
               $cardValue = 13;
           }
-          //echo $cardValue;
+         
+          echo $cardValue;
           $handPoints += $cardValue;
           if ($cardValue == 1) {
               echo "<img src='cards/$cardSuit/$cardValue.png' alt='$cardValue' style='border:solid 2px; border-color:yellow;'/>";
@@ -54,14 +55,23 @@
     <body>
        <h1>Ace poker</h1>
        <h2> Player with more aces wins</h2>
+       <br>
+       <br>
+       <br>
+       <br>
+       <p>
+           <h3>Player 1:</h2>
        <?php
        $p1 = displayHand();
        ?>
-       <hr>
+       </p>
+       <p>
+        <h3>Player 2:</h2>
+       
        <?php
        $p2 = displayHand();
        ?>
-       
+       </p>
        <?php
        if($p1 > $p2){
            echo "<h2>Player 1 Wins: $totalPoint points!</h2>";
