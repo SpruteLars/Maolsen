@@ -79,13 +79,9 @@
             if(!empty ($_GET['pictures'])){
                 $keyword = $_GET['pictures'];
             }
-            include 'api/pixabayAPI.php';
+            
            
-            if(isset($_GET['layout'])){
-                $imageURLs = getImageURLs(($_GET['keyword']),($_GET['layout']));
-            }else{
-                $imageURLs = getImageURLs($_GET['keyword']);
-            }
+            
         ?>
         
         <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
