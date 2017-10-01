@@ -8,7 +8,7 @@
     <head>
         <title> </title>
         <style>
-            @import url(Slider/css/styles.css);
+            @import url(css/styles.css);
             body{
                 background-image: url('<?=$backgroundImage ?>');
             }
@@ -16,6 +16,9 @@
            
     </head>
     <body>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+           <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+           <h1>Type a keyword</h1>
      
         <form>
             <input type="text" name="keyword"/>
@@ -68,7 +71,8 @@
                 if(!isset($imageURLs)){
                 echo "type a keyword to display a slideshow <br> with random pictures from pixabay";
             }else{
-                for ($i = 0; $i < 5; $i++) {
+                echo "<style>background-image: url(('<?=$imageURLs ?>'));</style>";
+                for ($i = 0; $i < 7; $i++) {
                     do {
                        $randomIndex = rand(0,count($imageURLs));
                     } while (!isset($imageURLs[$randomIndex]));
@@ -94,7 +98,7 @@
                 </div>
                 <ol class"carousel-indicators">
                     <?php
-                    for ($i = 0;$i < 5; $i++){
+                    for ($i = 0;$i < 7; $i++){
                         echo "<li data-target='#carousel-example-generic' data-slide-to='$i'";
                         echo ($i == 0)?"class ='active'": "";
                         echo "></li>";
@@ -104,7 +108,6 @@
                 <?php
             }
                 ?>
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-           <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+            
     </body>
 </html>

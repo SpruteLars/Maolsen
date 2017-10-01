@@ -1,7 +1,7 @@
-    body{
+    body {
         opacity:0.9;
         width:100%;
-        text-align:center;
+        text-align:center !important;
         color:yellow;
     }
     

@@ -30,7 +30,7 @@
               $cardValue = 13;
           }
          
-          echo $cardValue;
+          //echo $cardValue;
           $handPoints += $cardValue;
           if ($cardValue == 1) {
               echo "<img src='cards/$cardSuit/$cardValue.png' alt='$cardValue' style='border:solid 2px; border-color:yellow;'/>";
