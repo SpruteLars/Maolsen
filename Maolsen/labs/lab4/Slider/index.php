@@ -1,6 +1,18 @@
  <?php
-    $backgroundImage = "img/sea.jpg";
-    
+ include 'api/pixabayAPI.php';
+ if(isset($_GET['layout'])){
+                $imageURLs = getImageURLs(($_GET['keyword']),($_GET['layout']));
+            }else{
+                $imageURLs = getImageURLs($_GET['keyword']);
+            }
+            
+            
+    if(empty($_GET['keyword'])){
+        $backgroundImage = "img/sea.jpg";
+    }else{
+        $random = rand(0,count($imageURLs));
+        $backgroundImage = "$imageURLs[$random]";
+    }
 ?>
 
 <!DOCTYPE html>
@@ -24,10 +36,10 @@
             <input type="radio" name="layout" value="horizontal"/>Horizontal
             <input type="radio" name="layout" value="vertical"/>Vertical
             <select name="pictures">
-            <option value="" name="category">Select one</option>
-            <option value="Banana" name="category">Banana</option>
-            <option value="Dog" name="category">Dog</option>
-            <option value="Cat" name="category">Cat</option>
+            <option value="">Select one</option>
+            <option value="banana">banana</option>
+            <option value="dog">dog</option>
+            <option value="cat">cat</option>
                 </select>
             <input type="submit" value="Submit"/>
         </form>
@@ -57,22 +69,22 @@
               if(isset($_GET['keyword'])){  
                 echo "keyword typed: " . $_GET['keyword'] . "<br/>";
                 
-                include 'api/pixabayAPI.php';
-                $imageURLs = getImageURLs($_GET['keyword']);
-               
-                
-                
+                $keyword = $_GET['keyword'];
             }
-            if(isset($_GET['category'])){
-                echo "Category chosen:" . $_GET['category'] . "<br/>";
-                
-                include 'api/pixabayAPI.php';
-                $imageURLs = getImageURLs($_GET['category']);
+            if(empty ($_GET['pictures'])&&empty ($_GET['keyword'])){
+                echo "<h2 style='color: red;'>Error: fill out either the text input or the dropdown menu</h2>";
+                return;
+                exit; 
             }
-            
+            if(!empty ($_GET['pictures'])){
+                $keyword = $_GET['pictures'];
+            }
+            include 'api/pixabayAPI.php';
            
             if(isset($_GET['layout'])){
                 $imageURLs = getImageURLs(($_GET['keyword']),($_GET['layout']));
+            }else{
+                $imageURLs = getImageURLs($_GET['keyword']);
             }
         ?>
         
@@ -91,7 +103,7 @@
                 if(!isset($imageURLs)){
                 echo "type a keyword to display a slideshow <br> with random pictures from pixabay";
             }else{
-                echo "<style>background-image: url(('<?=$imageURLs ?>'));</style>";
+            
                 for ($i = 0; $i < 7; $i++) {
                     do {
                        $randomIndex = rand(0,count($imageURLs));

@@ -11,3 +11,27 @@
 [01-Oct-2017 04:22:49 UTC] PHP Stack trace:
 [01-Oct-2017 04:22:49 UTC] PHP   1. {main}() /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab4/Slider/index.php:0
 [01-Oct-2017 04:22:49 UTC] PHP   2. getImageURLs() /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab4/Slider/index.php:57
+[01-Oct-2017 05:43:46 UTC] PHP Fatal error:  Call to undefined function getImageURLs() in /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab4/Slider/index.php on line 3
+[01-Oct-2017 05:43:46 UTC] PHP Stack trace:
+[01-Oct-2017 05:43:46 UTC] PHP   1. {main}() /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab4/Slider/index.php:0
+[01-Oct-2017 05:44:27 UTC] PHP Fatal error:  Cannot redeclare getImageURLs() (previously declared in /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab4/Slider/api/pixabayAPI.php:4) in /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab4/Slider/api/pixabayAPI.php on line 4
+[01-Oct-2017 05:44:27 UTC] PHP Stack trace:
+[01-Oct-2017 05:44:27 UTC] PHP   1. {main}() /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab4/Slider/index.php:0
+[01-Oct-2017 05:54:00 UTC] PHP Fatal error:  Cannot redeclare getImageURLs() (previously declared in /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab4/Slider/api/pixabayAPI.php:4) in /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab4/Slider/api/pixabayAPI.php on line 4
+[01-Oct-2017 05:54:00 UTC] PHP Stack trace:
+[01-Oct-2017 05:54:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab4/Slider/index.php:0
+[01-Oct-2017 05:54:36 UTC] PHP Fatal error:  Cannot redeclare getImageURLs() (previously declared in /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab4/Slider/api/pixabayAPI.php:4) in /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab4/Slider/api/pixabayAPI.php on line 4
+[01-Oct-2017 05:54:37 UTC] PHP Stack trace:
+[01-Oct-2017 05:54:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab4/Slider/index.php:0
+[01-Oct-2017 05:55:43 UTC] PHP Fatal error:  Cannot redeclare getImageURLs() (previously declared in /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab4/Slider/api/pixabayAPI.php:4) in /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab4/Slider/api/pixabayAPI.php on line 4
+[01-Oct-2017 05:55:43 UTC] PHP Stack trace:
+[01-Oct-2017 05:55:43 UTC] PHP   1. {main}() /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab4/Slider/index.php:0
+[01-Oct-2017 05:55:43 UTC] PHP Fatal error:  Cannot redeclare getImageURLs() (previously declared in /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab4/Slider/api/pixabayAPI.php:4) in /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab4/Slider/api/pixabayAPI.php on line 4
+[01-Oct-2017 05:55:43 UTC] PHP Stack trace:
+[01-Oct-2017 05:55:43 UTC] PHP   1. {main}() /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab4/Slider/index.php:0
+[01-Oct-2017 05:55:58 UTC] PHP Fatal error:  Cannot redeclare getImageURLs() (previously declared in /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab4/Slider/api/pixabayAPI.php:4) in /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab4/Slider/api/pixabayAPI.php on line 4
+[01-Oct-2017 05:55:58 UTC] PHP Stack trace:
+[01-Oct-2017 05:55:58 UTC] PHP   1. {main}() /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab4/Slider/index.php:0
+[01-Oct-2017 05:55:59 UTC] PHP Fatal error:  Cannot redeclare getImageURLs() (previously declared in /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab4/Slider/api/pixabayAPI.php:4) in /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab4/Slider/api/pixabayAPI.php on line 4
+[01-Oct-2017 05:55:59 UTC] PHP Stack trace:
+[01-Oct-2017 05:55:59 UTC] PHP   1. {main}() /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab4/Slider/index.php:0
