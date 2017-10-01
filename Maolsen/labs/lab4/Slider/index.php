@@ -13,17 +13,22 @@
                 background-image: url('<?=$backgroundImage ?>');
             }
         </style>
-           
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     </head>
     <body>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-           <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+         
            <h1>Type a keyword</h1>
      
         <form>
             <input type="text" name="keyword"/>
-            <input type="radio" name="layout"/>Horizontal
-            <input type="radio" name="layout"/>Vertical
+            <input type="radio" name="layout" value="horizontal"/>Horizontal
+            <input type="radio" name="layout" value="vertical"/>Vertical
+            <select name="pictures">
+            <option value="" name="category">Select one</option>
+            <option value="Banana" name="category">Banana</option>
+            <option value="Dog" name="category">Dog</option>
+            <option value="Cat" name="category">Cat</option>
+                </select>
             <input type="submit" value="Submit"/>
         </form>
         
@@ -58,14 +63,29 @@
                 
                 
             }
+            if(isset($_GET['category'])){
+                echo "Category chosen:" . $_GET['category'] . "<br/>";
+                
+                include 'api/pixabayAPI.php';
+                $imageURLs = getImageURLs($_GET['category']);
+            }
             
            
             if(isset($_GET['layout'])){
-                
+                $imageURLs = getImageURLs(($_GET['keyword']),($_GET['layout']));
             }
         ?>
         
         <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                    <?php
+                    for ($i = 0;$i < 7; $i++){
+                        echo "<li data-target='#carousel-example-generic' data-slide-to='$i'";
+                        echo ($i == 0)?"class ='active'": "";
+                        echo "></li>";
+                    }
+                    ?>
+                </ol>
             <div class="carousel-inner" role="listbox">
                 <?php
                 if(!isset($imageURLs)){
@@ -76,7 +96,7 @@
                     do {
                        $randomIndex = rand(0,count($imageURLs));
                     } while (!isset($imageURLs[$randomIndex]));
-                    echo '<div class="item';
+                    echo '<div class="item ';
                     echo ($i==0)?"active": "";
                     echo '"/>';
                     echo '<img src="' . $imageURLs[rand(0,$randomIndex)]. '" />';
@@ -85,29 +105,23 @@
                 }
             
                 ?>
-                
+
                 </div>
                 <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-                    <span class="glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
                     <span class="sr-only">Previous</span>
                 </a>
                 <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-                    <span class="glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
                     <span class="sr-only">Next</span>
                 </a>
                 </div>
-                <ol class"carousel-indicators">
-                    <?php
-                    for ($i = 0;$i < 7; $i++){
-                        echo "<li data-target='#carousel-example-generic' data-slide-to='$i'";
-                        echo ($i == 0)?"class ='active'": "";
-                        echo "></li>";
-                    }
-                    ?>
-                </ol>
+                
                 <?php
             }
                 ?>
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+           <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
             
     </body>
 </html>

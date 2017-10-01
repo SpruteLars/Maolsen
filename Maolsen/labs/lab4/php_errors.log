@@ -2,3 +2,12 @@
 [01-Oct-2017 04:00:07 UTC] PHP Parse error:  syntax error, unexpected '(', expecting ']' in /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab4/Slider/index.php on line 74
 [01-Oct-2017 04:00:31 UTC] PHP Parse error:  syntax error, unexpected '(', expecting ']' in /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab4/Slider/index.php on line 74
 [01-Oct-2017 04:00:33 UTC] PHP Parse error:  syntax error, unexpected '(', expecting ']' in /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab4/Slider/index.php on line 74
+[01-Oct-2017 04:14:24 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab4/Slider/index.php on line 65
+[01-Oct-2017 04:22:36 UTC] PHP Warning:  Missing argument 2 for getImageURLs(), called in /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab4/Slider/index.php on line 57 and defined in /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab4/Slider/api/pixabayAPI.php on line 4
+[01-Oct-2017 04:22:36 UTC] PHP Stack trace:
+[01-Oct-2017 04:22:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab4/Slider/index.php:0
+[01-Oct-2017 04:22:36 UTC] PHP   2. getImageURLs() /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab4/Slider/index.php:57
+[01-Oct-2017 04:22:49 UTC] PHP Warning:  Missing argument 2 for getImageURLs(), called in /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab4/Slider/index.php on line 57 and defined in /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab4/Slider/api/pixabayAPI.php on line 4
+[01-Oct-2017 04:22:49 UTC] PHP Stack trace:
+[01-Oct-2017 04:22:49 UTC] PHP   1. {main}() /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab4/Slider/index.php:0
+[01-Oct-2017 04:22:49 UTC] PHP   2. getImageURLs() /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab4/Slider/index.php:57
