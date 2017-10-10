@@ -5,9 +5,12 @@ h2 {
     color:red;
     font-weight: bold;
 }
-.jumbotron span {
+.jumbotron h2 {
     font-weight: bold;
     color:red;
+}
+.jumbotron span{
+    font-weight: bold;
 }
 div {
     padding-top: 20px;
