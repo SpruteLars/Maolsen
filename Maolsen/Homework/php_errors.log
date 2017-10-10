@@ -17,3 +17,7 @@
 [19-Sep-2017 08:51:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/Maolsen/Maolsen/Homework/Hw2/index.php:0
 [19-Sep-2017 08:51:03 UTC] PHP   2. array_reverse() /home/ubuntu/workspace/Maolsen/Maolsen/Homework/Hw2/index.php:15
 [19-Sep-2017 09:11:50 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';' in /home/ubuntu/workspace/Maolsen/Maolsen/Homework/Hw2/index.php on line 263
+[10-Oct-2017 02:22:47 UTC] PHP Warning:  Division by zero in /home/ubuntu/workspace/Maolsen/Maolsen/Homework/Hw3/index.php on line 87
+[10-Oct-2017 02:22:47 UTC] PHP Stack trace:
+[10-Oct-2017 02:22:47 UTC] PHP   1. {main}() /home/ubuntu/workspace/Maolsen/Maolsen/Homework/Hw3/index.php:0
+[10-Oct-2017 02:48:41 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/Maolsen/Maolsen/Homework/Hw3/index.php on line 113
