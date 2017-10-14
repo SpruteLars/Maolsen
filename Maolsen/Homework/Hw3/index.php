@@ -57,7 +57,7 @@
                 </form>
         <?php
         
-      
+        if(isset($_GET['x']) && isset($_GET['y'])){
         if ($x=="" || $y=="" ) {
             if($x==""){
               echo "<span><h2>Error: insert a value for x</h2></span>";
@@ -65,7 +65,7 @@
             if($y==""){
               echo "<h2>Error: insert a value for y</h2>";
             }
-            
+        }
         }else{
             if (!isset($_GET['PlussMinus'])) {
                 echo "<h2> Error: choose a value if you just want one number do x or y, + or - 0</h2>";

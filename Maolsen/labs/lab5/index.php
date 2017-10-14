@@ -1,22 +1,22 @@
 <?php
 
-$host = 'localhost';
-$dbname = 'qoutes';
-$username = 'root';
-$password = '';
-$dbConn = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
+include '../../../../dbConnection.php';
 
-$dbConn -> setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+$conn = getDbConnection();
 
-$sql = "SELECT firstName, lastName FROM q_author WHERE gender = 'M'";
+$sql = "SELECT * FROM q_quote NATURAL JOIN q_author";
 
-$stmt = $dbConn -> prepare ($sql);
+$stmt = $conn -> prepare ($sql);
 
-$stmt -> execute (  array ( ':id' => '1')  );
+$stmt -> execute();
 
-while ($row = $stmt -> fetch())  {
-    echo  $row['firstName'] . ", " . $row['lastName'];
-}
+$records = $stmt -> fetchAll();
+
+
+
+
+    $randomNumber = array_rand($records);
+    echo ($records[$randomNumber][quote] . " " . $records[$randomNumber][quoteId] . "<br> <a href='authorInfo.php?authorId=".$records[$randomNumber][authorId]."'>" . $records[$randomNumber][firstName] . " " . $records[$randomNumber][lastName] ."</a> <br>" . "<iframe src='authorInfo.php?authorId='".$records[$randomNumber][authorId]."'></iframe>" );
 
 ?>
 
@@ -27,6 +27,7 @@ while ($row = $stmt -> fetch())  {
         
     </head>
     <body>
+        
         
     </body>
 </html>
