@@ -1,6 +1,26 @@
 body {
     text-align: center;
-    background-color: black;
+    background-color: grey;
     color:white;
+    font-size: 24px;
+}
+
+a{
+    text-transform: none;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 20px;
     
+}
+
+iframe {
+    background-color: black;
+    border: solid 5px;
+    border-radius: 25px 25px 25px 25px;
+    width: 800px;
+    height: 600px;
+}
+iframe :hover{
+    width: 700px;
+    height: 600px;
 }

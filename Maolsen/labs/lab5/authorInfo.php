@@ -11,7 +11,14 @@ $stmt -> execute();
 
 $record = $stmt -> fetch();
 
-echo "<h1> Author Info </h1><br>" .  "Full name: " .$record['firstName'] . " " . $record['lastName'] . " <br>Date of birthday: " . $record['dob'] . "<br>Date of death: " .  $record['dod'] . "<br>" . $record['biography'] . " " . "<br><img src='". $record['picture']. "' width='200'>";
+if ($record['gender'] == "M") {
+    $gender = "Male";
+    // code...
+}else{
+    $gender = "Female";
+}
+
+echo "<h1> Author Info </h1><br>" .  "Full name: " .$record['firstName'] . " " . $record['lastName'] . "<br>Gender: ". $gender . " <br>Date of birthday: " . $record['dob'] . "<br>Date of death: " .  $record['dod'] ."<br>Country: ". $record['country'] . "<br>biography: <br>" . $record['biography'] . " " . "<br><img src='". $record['picture']. "' width='200'>";
 
 ?>
 
@@ -20,7 +27,7 @@ echo "<h1> Author Info </h1><br>" .  "Full name: " .$record['firstName'] . " " .
     <head>
         <link rel="stylesheet" href="style.css" type="text/css" />
     </head>
-    <body>
+    <body style='background-color:black;'>
 
 
 
