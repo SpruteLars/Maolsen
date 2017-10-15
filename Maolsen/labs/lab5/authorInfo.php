@@ -18,7 +18,7 @@ if ($record['gender'] == "M") {
     $gender = "Female";
 }
 
-echo "<h1> Author Info </h1><br>" .  "Full name: " .$record['firstName'] . " " . $record['lastName'] . "<br>Gender: ". $gender . " <br>Date of birthday: " . $record['dob'] . "<br>Date of death: " .  $record['dod'] ."<br>Country: ". $record['country'] . "<br>biography: <br>" . $record['biography'] . " " . "<br><img src='". $record['picture']. "' width='200'>";
+echo "<h1> Author Info </h1><br>" .  "Full name: " .$record['firstName'] . " " . $record['lastName'] . "<br>Gender: ". $gender . " <br>Date of birthday: " . $record['dob'] . "<br>Date of death: " .  $record['dod'] ."<br>Profession: " . $record['profession'] ."<br>Country: ". $record['country'] . "<br>biography: <br>" . $record['biography'] . " " . "<br><img src='". $record['picture']. "' width='200'>";
 
 ?>
 

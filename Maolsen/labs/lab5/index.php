@@ -36,7 +36,7 @@ function getRandomQuote() {
     
     $record = $stmt -> fetch();        
     
-    echo    $record['quote']   .'"' ."<br>"  . "<a target='authorInfo' href='authorInfo.php?authorId=".$record['authorId']."'>-" . $record['firstName'] . " " . $record['lastName'] . "</a>";
+    echo    $record['quote']   .'"' ."<br>"  . "<a target='authorInfo' href='authorInfo.php?authorId=".$record['authorId']."'>" . $record['firstName'] . " " . $record['lastName'] . "</a>";
     
     
 
