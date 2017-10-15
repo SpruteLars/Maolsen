@@ -5,8 +5,7 @@ function getDbConnection() {
     $dbname = 'qoutes';
     $username = 'root';
     $password = '';
-    
-        //when connecting from Heroku
+     
     if  (strpos($_SERVER['HTTP_HOST'], 'herokuapp') !== false) {
         $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
         $host = $url["host"];
@@ -16,10 +15,10 @@ function getDbConnection() {
     } 
     
     
-    //creates database connection
+    
     $dbConn = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
     
-    //we'll be able to see some errors with database
+ 
     $dbConn -> setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     
     return $dbConn;

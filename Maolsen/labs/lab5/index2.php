@@ -5,23 +5,6 @@ include '../../../dbConnection.php';
 $dbConn = getDbConnection();
 
 
-function getRandomQuote_NotEfficient() {
-    
-    global $dbConn;
-    
-    $sql = "SELECT quote FROM q_quote ";
-    
-    $stmt = $dbConn -> prepare ($sql);
-    
-    $stmt -> execute();
-    
-    $records = $stmt -> fetchAll();  
-    
-    shuffle($records);
-    
-    echo $records[0]['quote'];
-
-}
 
 
 function getRandomQuote() {
@@ -53,8 +36,7 @@ function getRandomQuote() {
     
     $record = $stmt -> fetch();        
     
-    echo    $record['quote']  . "<br>";
-    echo    "<a target='authorInfo' href='authorInfo.php?authorId=".$record['authorId']."'>-" . $record['firstName'] . " " . $record['lastName'] . "</a>";
+    echo    $record['quote']  . "<br>" . "<a target='authorInfo' href='authorInfo.php?authorId=".$record['authorId']."'>-" . $record['firstName'] . " " . $record['lastName'] . "</a>";
     
     
 
@@ -66,7 +48,7 @@ function getRandomQuote() {
 <!DOCTYPE html>
 <html>
     <head>
-        <title> Lab 5: Random Famous Quote Generator </title>
+        <link rel="stylesheet" href="style.css" type="text/css" />
     </head>
     <body>
 
@@ -74,7 +56,7 @@ function getRandomQuote() {
     <?=getRandomQuote()?>        
 
 <br />
-    <iframe name="authorInfo" width="500" height="300"></iframe>
+    <iframe name="authorInfo" width="600" height="500"></iframe>
 
     </body>
 </html>
