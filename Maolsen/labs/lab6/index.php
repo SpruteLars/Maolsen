@@ -33,7 +33,7 @@
             $sql = $sql . " ORDER by quote";
         }
         
-        echo $sql;
+        
         $stmt = $conn -> prepare($sql);
         $stmt->execute($namedParameters);
         $records = $stmt->fetchAll(PDO::FETCH_ASSOC);
