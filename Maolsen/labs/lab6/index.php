@@ -1,5 +1,5 @@
 <?php
-    include '../../../dbConnection.php';
+    include '../../../dbConnection2.php';
     
     $conn = getDbConnection();
     
@@ -20,7 +20,8 @@
         }
         if(!empty($_GET['country'])){
             $sql = $sql . " AND country = :country";
-            $namedParameters[":country"] = $_GET['country']; 
+            $namedParameters[":country"] = $_GET['country'];
+            
         }
         if(!empty($_GET['category'])){
             $sql = $sql . " AND category = :category";
@@ -38,7 +39,7 @@
         $stmt->execute($namedParameters);
         $records = $stmt->fetchAll(PDO::FETCH_ASSOC);
         foreach ($records as $record){
-            echo "<br>" . $record['quote'] . " " . $record['firstName'] . " ". $record['lastName'];
+            echo "<br><br>" . $record['quote'] . " " . $record['firstName'] . " ". $record['lastName'];
         }
     }
     
@@ -50,7 +51,12 @@
         $stmt->execute();
         $records = $stmt->fetchAll(PDO::FETCH_ASSOC);
         foreach ($records as $record){
-            echo "<option>". $record['country']."</option>";
+            if($_GET['country']==$record['country']){
+            echo "<option selected>". $record['country']."</option>";
+            }
+            else{
+                 echo "<option>". $record['country']."</option>";
+            }
         }
         
     }
@@ -63,7 +69,11 @@
         $stmt->execute();
         $records = $stmt->fetchAll(PDO::FETCH_ASSOC);
         foreach ($records as $record){
-            echo "<option>". $record['category']."</option>";
+            if($_GET['category']==$record['category']){
+            echo "<option selected>". $record['category']."</option>";
+            }else{
+                echo "<option>". $record['category']."</option>";
+            }
         }
     }
     
@@ -73,31 +83,62 @@
 <html>
     <head>
         <title>Lab 6: Quote Finder</title>
-        <link rel="stylesheet" type="text/css" href="css/styles.css" />
+        <link rel="stylesheet" type="text/css" href="style.css" />
     </head>
     <body>
         <h1>Quote Finder</h1>
         <form method="get">
                 <strong>Quote Content:</strong>
-                <input type="text" name="content">
+                <input type="text" name="content" value="<?=$_GET['content']?>">
+                <br>
                 <strong>Author's Gender:</strong>
-                <input type="radio" name="gender" id="female" value="F">
+                <input type="radio" name="gender" id="female" value="F"
+                <?php
+                if($_GET['gender'] == "F"){
+                    echo "checked";
+                }
+                ?>
+                >
                 <label for="female">Female</label>
-                <input type="radio" name="gender" id="male" value="M">
+                <input type="radio" name="gender" id="male" value="M"
+                                <?php
+                if($_GET['gender'] == "M"){
+                    echo "checked";
+                }
+                ?>
+                >
                 <label for="male">Male</label>
+                <br>
                 <strong>Author's Birthplace:</strong>
                 <select name="country">
                     <option value="">Select a Country</option>
                     <?=displayCountryOptions()?>
                 </select>
+                <br>
                 <strong>Category:</strong>  
                 <select name="category">
                     <option value="">Select a Category</option>
                     <?=displayCategoryOptions()?>
                 </select>
+                <br>
                  <strong>Order by:</strong>
-                <input type="radio" name="order" value ="lastName"/>Author
-                <input type="radio" name="order" value ="quote"/>Quote
+                 
+                <input type="radio" name="order" value ="lastName"
+                
+                <?php
+                if($_GET['order'] == "lastName"){
+                    echo "checked";
+                }
+                ?>
+                />Author
+                <input type="radio" name="order" value ="quote"
+                
+                <?php
+                if($_GET['order'] == "quote"){
+                    echo "checked";
+                }
+                ?>
+                />Quote
                 <input type="submit" value="Filter" name="submit">
                
                 

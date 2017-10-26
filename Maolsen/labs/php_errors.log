@@ -845,3 +845,64 @@ Stack trace:
 #1 /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab6/index.php(107): displayQuote()
 #2 {main}
   thrown in /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab6/index.php on line 35
+[24-Oct-2017 17:07:50 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'Midterm.q_author' doesn't exist' in /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab6/index.php:50
+Stack trace:
+#0 /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab6/index.php(50): PDOStatement->execute()
+#1 /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab6/index.php(91): displayCountryOptions()
+#2 {main}
+  thrown in /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab6/index.php on line 50
+[24-Oct-2017 17:08:18 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'Midterm.q_author' doesn't exist' in /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab6/index.php:50
+Stack trace:
+#0 /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab6/index.php(50): PDOStatement->execute()
+#1 /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab6/index.php(91): displayCountryOptions()
+#2 {main}
+  thrown in /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab6/index.php on line 50
+[24-Oct-2017 17:09:39 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'Midterm.q_author' doesn't exist' in /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab6/index.php:50
+Stack trace:
+#0 /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab6/index.php(50): PDOStatement->execute()
+#1 /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab6/index.php(91): displayCountryOptions()
+#2 {main}
+  thrown in /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab6/index.php on line 50
+[24-Oct-2017 17:09:40 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'Midterm.q_author' doesn't exist' in /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab6/index.php:50
+Stack trace:
+#0 /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab6/index.php(50): PDOStatement->execute()
+#1 /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab6/index.php(91): displayCountryOptions()
+#2 {main}
+  thrown in /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab6/index.php on line 50
+[24-Oct-2017 17:09:41 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'Midterm.q_author' doesn't exist' in /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab6/index.php:50
+Stack trace:
+#0 /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab6/index.php(50): PDOStatement->execute()
+#1 /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab6/index.php(91): displayCountryOptions()
+#2 {main}
+  thrown in /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab6/index.php on line 50
+[24-Oct-2017 17:16:15 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1049] Unknown database 'quotes'' in /home/ubuntu/workspace/Maolsen/dbConnection2.php:19
+Stack trace:
+#0 /home/ubuntu/workspace/Maolsen/dbConnection2.php(19): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab6/index.php(4): getDbConnection()
+#2 {main}
+  thrown in /home/ubuntu/workspace/Maolsen/dbConnection2.php on line 19
+[24-Oct-2017 18:12:10 UTC] PHP Warning:  include(../../dbConnection2.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab7/loginProcess.php on line 7
+[24-Oct-2017 18:12:10 UTC] PHP Stack trace:
+[24-Oct-2017 18:12:10 UTC] PHP   1. {main}() /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab7/loginProcess.php:0
+[24-Oct-2017 18:12:10 UTC] PHP Warning:  include(): Failed opening '../../dbConnection2.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab7/loginProcess.php on line 7
+[24-Oct-2017 18:12:10 UTC] PHP Stack trace:
+[24-Oct-2017 18:12:10 UTC] PHP   1. {main}() /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab7/loginProcess.php:0
+[24-Oct-2017 18:12:10 UTC] PHP Fatal error:  Call to undefined function getDbConnection() in /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab7/loginProcess.php on line 9
+[24-Oct-2017 18:12:10 UTC] PHP Stack trace:
+[24-Oct-2017 18:12:10 UTC] PHP   1. {main}() /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab7/loginProcess.php:0
+[24-Oct-2017 18:20:29 UTC] PHP Fatal error:  Call to undefined function prepare() in /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab7/loginProcess.php on line 16
+[24-Oct-2017 18:20:29 UTC] PHP Stack trace:
+[24-Oct-2017 18:20:29 UTC] PHP   1. {main}() /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab7/loginProcess.php:0
+[24-Oct-2017 18:20:48 UTC] PHP Fatal error:  Call to undefined function prepare() in /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab7/loginProcess.php on line 16
+[24-Oct-2017 18:20:48 UTC] PHP Stack trace:
+[24-Oct-2017 18:20:48 UTC] PHP   1. {main}() /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab7/loginProcess.php:0
+[24-Oct-2017 18:21:01 UTC] PHP Fatal error:  Call to undefined function location() in /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab7/loginProcess.php on line 26
+[24-Oct-2017 18:21:01 UTC] PHP Stack trace:
+[24-Oct-2017 18:21:01 UTC] PHP   1. {main}() /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab7/loginProcess.php:0
+[24-Oct-2017 18:32:49 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab7/admin.php on line 12
+[24-Oct-2017 18:33:08 UTC] PHP Parse error:  syntax error, unexpected '?>' in /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab7/admin.php on line 12
+[24-Oct-2017 18:45:51 UTC] PHP Fatal error:  Cannot redeclare getDbConnection() (previously declared in /home/ubuntu/workspace/Maolsen/dbConnection2.php:3) in /home/ubuntu/workspace/Maolsen/dbConnection2.php on line 3
+[24-Oct-2017 18:45:51 UTC] PHP Stack trace:
+[24-Oct-2017 18:45:51 UTC] PHP   1. {main}() /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab7/admin.php:0
+[24-Oct-2017 18:45:51 UTC] PHP   2. authorlist() /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab7/admin.php:32
+[24-Oct-2017 18:48:28 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/Maolsen/Maolsen/labs/lab7/admin.php on line 7

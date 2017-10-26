@@ -1,0 +1,13 @@
+body{
+    text-align: center;
+    background-color: blue;
+}
+.quotes{
+    border-style: solid;
+    border-radius: 25px;
+    border-top-style: dotted;
+    border-bottom-style: dashed;
+    background-color: grey;
+    font-size: 18px;
+    
+}

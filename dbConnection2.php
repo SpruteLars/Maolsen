@@ -2,7 +2,7 @@
 
 function getDbConnection() {
     $host = 'localhost'; //cloud 9 database
-    $dbname = 'Midterm';
+    $dbname = 'qoutes';
     $username = 'root';
     $password = '';
      
