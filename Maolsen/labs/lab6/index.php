@@ -123,22 +123,22 @@
                 <br>
                  <strong>Order by:</strong>
                  
-                <input type="radio" name="order" value ="lastName"
+                <input type="radio" name="order" id="name" value ="lastName"
                 
                 <?php
                 if($_GET['order'] == "lastName"){
                     echo "checked";
                 }
                 ?>
-                />Author
-                <input type="radio" name="order" value ="quote"
+                /><label for="name">Author</label>
+                <input type="radio" name="order" id="quote" value ="quote"
                 
                 <?php
                 if($_GET['order'] == "quote"){
                     echo "checked";
                 }
                 ?>
-                />Quote
+                /><label for="quote">Quote</label>
                 <input type="submit" value="Filter" name="submit">
                
                 

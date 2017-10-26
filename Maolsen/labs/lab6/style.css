@@ -1,6 +1,8 @@
 body{
     text-align: center;
     background-color: blue;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 .quotes{
     border-style: solid;
@@ -9,5 +11,7 @@ body{
     border-bottom-style: dashed;
     background-color: grey;
     font-size: 18px;
+     margin-left: 50px;
+    margin-right: 50px;
     
 }
