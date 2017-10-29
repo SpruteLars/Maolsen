@@ -5,8 +5,14 @@
     
     function displayQuote(){
         global $conn;
-        $sql = "SELECT firstName, lastName, quote FROM q_author NATURAL JOIN q_quote NATURAL JOIN q_cat_quote NATURAL JOIN q_category WHERE 1";
         
+        
+         if(!empty($_GET['category'])){
+            $sql =  "SELECT firstName, lastName, quote FROM q_author NATURAL JOIN q_quote NATURAL JOIN q_cat_quote NATURAL JOIN q_category where 1";
+         
+        }else{
+            $sql = "SELECT firstName, lastName, quote FROM q_author NATURAL JOIN q_quote where 1 ";
+        }
         $namedParameters = array();
         if(!empty($_GET['content'])){
             
@@ -150,6 +156,8 @@
             <?php
             displayQuote();
             ?>
+            
+            Quotes are displayed above.(if no quotes are shown you have filtered out all of them)
         </div>
         
     </body>

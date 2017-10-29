@@ -33,7 +33,6 @@
         <h1>Admin section</h1>
         <h2>Welcome <?=$_SESSION['adminFullName']?> </h2>
         <?=authorList()?>
-        
-        
+
     </body>
 </html>
