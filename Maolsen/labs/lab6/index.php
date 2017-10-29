@@ -156,7 +156,7 @@
             <?php
             displayQuote();
             ?>
-            
+            <br>
             Quotes are displayed above.(if no quotes are shown you have filtered out all of them)
         </div>
         
