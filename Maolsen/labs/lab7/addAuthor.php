@@ -41,8 +41,8 @@ $stmt->execute($np);
             Firstname: <input type="text" name="firstName"/>
             Lastname: <input type="text" name="lastName"/><br>
             Country: <input type="text" name="country"/>
-            Gender: <input type="radio" name="gender" value="F" id="female"/> <label for="female">F</label>
-            <input type="radio" name="gender" value="M" id="male"/><label for="male">M</label><br>
+            Gender: <input type="radio" name="gender" value="F" id="female"/> <label for="female">Female</label>
+            <input type="radio" name="gender" value="M" id="male"/><label for="male">Male</label><br>
             profession: <input type="text" name="profession"/>
             Date of death: <input type="text" name="dod"/>
             Date of Birth: <input type="text" name="dob"/><br>
