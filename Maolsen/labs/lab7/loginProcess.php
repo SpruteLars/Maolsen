@@ -1,7 +1,7 @@
 <?php
 
 session_start();
-print_r($_POST);
+
 
 
 include '../../../dbConnection2.php';

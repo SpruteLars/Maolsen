@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+             var name;
+            
+            name = "John";
+            
+            alert("My name is " + name);
+            
+            console.log(name);
+            
+            function displayName() {
+                name =  document.getElementById("userName").value;
+                console.log(name.length);
+                alert(""+name.length);
+                document.getElementById("display").innerHTML = "The length of the name is "+name.length
+            }
+        </script>
+    </head>
+    
+    <body>
+        <input type="text" id="userName"/>
+        <button id="submit" onclick="displayName()">hey hey</button>
+        <p id="display"></p>
+    </body>
+</html>
