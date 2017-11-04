@@ -49,7 +49,7 @@ $stmt->execute($np);
             Biography: <input type="text-area" name="biography"/>
             picture: <input type="text" name="picture"/><br>
             Added by:<input type="text" name="addedby"/>
-            <input type="submit" value="add author" name="addForm"/>
+            <input type="submit" value="add author" name="addForm" action="loginProcess.php"/>
         </form>
         
     </div>      
