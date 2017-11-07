@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Guess a Number </title>
+        <meta charset="utf-8" />
+        <script src="https://code.jquery.com/jquery.min.js"></script>
+        <!--Bootstrap files-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <!--Custom Styles-->
+        <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="jumbotron">
+                <h2>Guess a number</h2><br>
+                <input type="text" name="" id="guess"/>
+                <button type="button" onclick="clicked()" id="trykk">Guess</button>
+                <p id="gamesPlayed"></p>
+                <p id="result"></p>
+                <p id="turns"></p>
+            </div>
+        </div>
+    </body>
+    <script>
+            var rand = Math.floor((Math.random()*100));
+            console.log(rand);
+            console.log("test");
+            var turn = 1;
+            var victories = 0;
+            var games = 0;
+            function restart(){
+                turn = 1;
+                rand = Math.floor((Math.random()*100));
+                console.log(rand);
+                $("#turns").html("");
+                //document.getElementById("turns").innerHTML= "";
+                $("#gamesPlayed").html(victories + " out of " + games);
+                //document.getElementById("gamesPlayed").innerHTML = victories + " out of " + games;
+                $("#trykk").html("Guess");
+                //document.getElementById("trykk").innerHTML = "Guess";
+                //$("#trykk").onclick(clicked);
+                document.getElementById("trykk").onclick = clicked;
+            }
+            function clicked(){
+                if(turn < 7){
+                    if(document.getElementById("guess").value>99 || document.getElementById("guess").value < 1){
+                        "you have to guess between 1 to 99";
+                    }
+                if(document.getElementById("guess").value == rand){
+                    $("#result").html("you guessed right <br> <h2 style='color:green;'>Congratulation<h2>");
+                    //document.getElementById("result").innerHTML = "you guessed right <br> <h2 style='color:green;'>Congratulation<h2>";
+                    $("#turns").html("<br>" + "turn " + turn + ": correct");
+                    //document.getElementById("turns").innerHTML += "<br>" + "turn " + turn + ": correct";
+                    document.getElementById("trykk").onclick = restart;
+                    document.getElementById("trykk").innerHTML = "Restart";
+                    victories++;
+                    games++;
+                }else{
+                    if(document.getElementById("guess").value > rand){
+                     document.getElementById("result").innerHTML = "you guessed too high";
+                    document.getElementById("turns").innerHTML += "<br>" + "turn " + turn + ": High";
+                     turn++;
+                    }else{
+                        document.getElementById("result").innerHTML = "you guessed too low";
+                        document.getElementById("turns").innerHTML += "<br>" + "turn " + turn + ": Low";
+                           turn++;
+                    }
+                }
+            }else{
+                document.getElementById("result").innerHTML = "you lost <h2 style='color:red;'>Too bad<h2>";
+                document.getElementById("turns").innerHTML += "<br>" + "turn " + turn + ": Lost";
+                document.getElementById("trykk").innerHTML = "Restart";
+                document.getElementById("trykk").onclick = restart;
+                games++;
+            }
+            }
+        </script>
+</html>
