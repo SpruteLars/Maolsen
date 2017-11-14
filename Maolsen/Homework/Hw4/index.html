@@ -4,6 +4,9 @@
         <script src="https://code.jquery.com/jquery.min.js"></script>
         <link rel="stylesheet" href="style.css" type="text/css" />
         <script>
+        //
+        //Picture links: https://pixabay.com/no/ok-sjekk-todo-agenda-ikonet-1976099/  https://pixabay.com/no/krysse-slette-fjerne-avbryt-296507/
+      
         var log = 0
         var log2 = 0
         var log3 = 0
@@ -19,20 +22,21 @@
                 
                 if(document.getElementById("answer1").value == "yes"){
                     points++;
-                    document.getElementById("result1").innerHTML = "<span style='color:green;'>correct<span>";
+                    document.getElementById("result1").innerHTML = "<span style='color:green;'>correct<span><img src='ok.png' width='100px' height='100px'></img>";
                 }else{
-                     document.getElementById("result1").innerHTML = "<span style='color:red;'>Wrong<span>";
+                     document.getElementById("result1").innerHTML = "<span style='color:red;'>Wrong<span><img src='cross.png' width='100px' height='100px'></img>";
                 }
                 
                 
                 question++;
                 console.log(question);
-                  if(question > 6){
-                var prosent = (points/10) * 2;
-                if(points*question > 8){
-                    document.getElementById("finalResult").innerHTML = "Congratulations You made it!";
+                 document.getElementById("turns").innerHTML = "you have " + points + "out of 6"
+                   if(question == 6){
+                var prosent = (points/6)*100;
+                if(prosent > 80){
+                    document.getElementById("finalResult").innerHTML = "Congratulations You made it! " + prosent + "% out of 100%" ;
                 }else{
-                    document.getElementById("finalResult").innerHTML = "Too bad, Try again";
+                    document.getElementById("finalResult").innerHTML = "Too bad, Try again" + prosent + "% out of 100%";
                 }
                 
             }
@@ -41,28 +45,31 @@
                      document.getElementById("error").innerHTML = "You already answered that one";
                  }
             }
+            
              function quiz2(){
                  if(log2 !=1){
-                 $q2 = $("answer2").val();
-                console.log($q2);
-                  document.getElementById("error").innerHTML = "";
-                if($q2 == 2){
-                    points++;
-                    document.getElementById("result2").innerHTML = "<span style='color:green;'>correct<span>";
-                }else{
-                     document.getElementById("result2").innerHTML = "<span style='color:red;'>Wrong<span>";
-                }
-                if(question > 6){
-                var prosent = (points/10) * 2;
-                if(points*question > 8){
-                    document.getElementById("finalResult").innerHTML = "Congratulations You made it!";
-                }else{
-                    document.getElementById("finalResult").innerHTML = "Too bad, Try again";
-                }
+                    $q2 = $("answer2").val();
+                    console.log($q2);
+                    document.getElementById("error").innerHTML = "";
+                    if($q2 == 2){
+                        points++;
+                        document.getElementById("result2").innerHTML = "<span style='color:green;'>correct<span><img src='ok.png' width='100px' height='100px'></img>";
+                    }else{
+                        document.getElementById("result2").innerHTML = "<span style='color:red;'>Wrong<span><img src='cross.png' width='100px' height='100px'></img>";
+                    }
+                    question++;
+                   document.getElementById("turns").innerHTML = "you have " + points + "out of 6"
+                   if(question == 6){
+                    var prosent = (points/6)*100;
+                     if(prosent > 80){
+                        document.getElementById("finalResult").innerHTML = "Congratulations You made it! " + prosent + "% out of 100%" ;
+                    }else{
+                         document.getElementById("finalResult").innerHTML = "Too bad, Try again" + prosent + "% out of 100%";
+                }   
                 
           
                question++;
-                  console.log(question);
+            console.log(question);
             }
             log2++;
              }else{
@@ -75,26 +82,27 @@
                   document.getElementById("error").innerHTML = "";
                 if($q1 == 2){
                          points++;
-                    $("#result3").html("<span style='color:green;'>correct<span>");
+                    $("#result3").html("<span style='color:green;'>correct<span><img src='ok.png' width='100px' height='100px'></img>");
                 }else{
-                     $("#result3").html("<span style='color:red;'>Wrong<span>");
-                }
-                
-               if(question > 6){
-                var prosent = (points/10) * 2;
-                if(points*question > 8){
-                    document.getElementById("finalResult").innerHTML = "Congratulations You made it!";
-                }else{
-                    document.getElementById("finalResult").innerHTML = "Too bad, Try again";
+                     $("#result3").html("<span style='color:red;'>Wrong<span><img src='cross.png' width='100px' height='100px'></img>");
                 }
                 question++;
                 console.log(question);
+                document.getElementById("turns").innerHTML = "you have " + points + "out of 6"
+                   if(question == 6){
+                var prosent = (points/6)*100;
+                if(prosent > 80){
+                    document.getElementById("finalResult").innerHTML = "Congratulations You made it! " + prosent + "% out of 100%" ;
+                }else{
+                    document.getElementById("finalResult").innerHTML = "Too bad, Try again" + prosent + "% out of 100%";
+                }
             }
             log3++;
                 }else{
                      document.getElementById("error").innerHTML = "You already answered that one";
                  }
             }
+            
             function quiz4(){
                 if(log4 !=1){
                 var sum = 0;
@@ -107,20 +115,21 @@
                 
                 if(sum == 88){
                      points++;
-                    $("#result4").html("<span style='color:green;'>correct<span>");
+                    $("#result4").html("<span style='color:green;'>correct<span><img src='ok.png' width='100px' height='100px'></img>");
                 }else{
-                     $("#result4").html("<span style='color:red;'>Wrong<span>");
+                     $("#result4").html("<span style='color:red;'>Wrong<span><img src='cross.png' width='100px' height='100px'></img>");
                 }
                 
                 
                 question++;
                 console.log(question);
-                  if(question > 6){
-                var prosent = (points/10) * 2;
-                if(points*question > 8){
-                    document.getElementById("finalResult").innerHTML = "Congratulations You made it!";
+                 document.getElementById("turns").innerHTML = "you have " + points + "out of 6"
+                   if(question == 6){
+                 var prosent = (points/6)*100;
+                if(prosent > 80){
+                    document.getElementById("finalResult").innerHTML = "Congratulations You made it! " + prosent + "% out of 100%" ;
                 }else{
-                    document.getElementById("finalResult").innerHTML = "Too bad, Try again";
+                    document.getElementById("finalResult").innerHTML = "Too bad, Try again" + prosent + "% out of 100%";
                 }
                 
             }
@@ -153,19 +162,20 @@
                 
                 if(q1 == 7){
                     points++;
-                    document.getElementById("result5").innerHTML = "<span style='color:green;'>correct<span>";
+                    document.getElementById("result5").innerHTML = "<span style='color:green;'>correct<span><img src='ok.png' width='100px' height='100px'></img>" ;
                 }else{
-                     document.getElementById("result5").innerHTML = "<span style='color:red;'>Wrong<span>";
+                     document.getElementById("result5").innerHTML = "<span style='color:red;'>Wrong<span><img src='cross.png' width='100px' height='100px'></img>";
                 }
                 
                 question++;
                 console.log(question);
-                  if(question > 6){
-                var prosent = (points/10) * 2;
-                if(points*question > 8){
-                    document.getElementById("finalResult").innerHTML = "Congratulations You made it!";
+                 document.getElementById("turns").innerHTML = "you have " + points + "out of 6"
+                   if(question == 6){
+                 var prosent = (points/6)*100;
+                if(prosent > 80){
+                    document.getElementById("finalResult").innerHTML = "Congratulations You made it! " + prosent + "% out of 100%" ;
                 }else{
-                    document.getElementById("finalResult").innerHTML = "Too bad, Try again";
+                    document.getElementById("finalResult").innerHTML = "Too bad, Try again" + prosent + "% out of 100%";
                 }
                 
             }
@@ -186,23 +196,25 @@
                     points++;
                     $("#result6").html("<span style='color:green;'>correct<span>");
                 }else{
-                     $("#result6").html("<span style='color:red;'>Wrong<span>");
+                     $("#result6").html("<span style='color:red;'>Wrong<span><img src='Dark_Red_x.svg' width='200px'></img>");
                 }
                 
                 
-                points++;
+               
                 question++;
                  console.log(question);
+                 document.getElementById("turns").innerHTML = "you have " + points + "out of 6"
                    if(question == 6){
-                var prosent = (points/10) * 2;
-                if(points*question > 8){
-                    document.getElementById("finalResult").innerHTML = "Congratulations You made it!";
+                var prosent = (points/6)*100;
+               if(prosent > 80){
+                    document.getElementById("finalResult").innerHTML = "Congratulations You made it! " + prosent + "% out of 100%" ;
                 }else{
-                    document.getElementById("finalResult").innerHTML = "Too bad, Try again";
+                    document.getElementById("finalResult").innerHTML = "Too bad, Try again" + prosent + "% out of 100%";
                 }
                 
                 }
                 log6++;
+                
                  }else{
                      document.getElementById("error").innerHTML = "You already answered that one";
                  }
@@ -214,7 +226,9 @@
         </script>
     </head>
     <body>
+        
        <h1>Class quiz</h1>
+       <div id="box">
         <h2 id="error" style="color:red"></h2>
         <p>Is this the best question? </p>
         <input type="text" name="" id="answer1"/>
@@ -243,7 +257,7 @@
         <p>4. how many radio buttons are there?</p>
         
         <input type="radio" name="ans3" value="1" id="answer3"/>1
-        <input type="radio" name="ans3" value="2" id="answer31"/>2
+        <input type="radio" name="ans3" value="2" id="answer3"/>2
         <button type="button" onclick="quiz3()" id="try">Submit</button>
         <p id="result3"></p>
          <p>answer= 2 </p>
@@ -266,9 +280,9 @@
         <button type="button" onclick="quiz6(value)" value="451" id="trykk">CST:451</button>
         <p id="result6"></p>
          <p>answer= 352 </p>
-        <p id="finalResult"></p>
+        <h1 id="finalResult"></h1>
       
         <p id="turns"></p>
-        
+        </div>
     </body>
 </html>

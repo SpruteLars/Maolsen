@@ -3,3 +3,14 @@ body{
     background-color:grey;
     
 }
+div{
+    border-style:solid;
+    border-bottom-width: medium;
+    background-color: white;     
+    border-radius: 25px;
+    
+}
+
+h1{
+    font-weight: bold;
+}
