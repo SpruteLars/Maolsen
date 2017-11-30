@@ -32,3 +32,81 @@
 [10-Oct-2017 05:30:45 UTC] PHP Stack trace:
 [10-Oct-2017 05:30:45 UTC] PHP   1. {main}() /home/ubuntu/workspace/Maolsen/Maolsen/Homework/Hw3/index.php:0
 [10-Oct-2017 05:32:32 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/ubuntu/workspace/Maolsen/Maolsen/Homework/Hw3/index.php on line 174
+[30-Nov-2017 09:27:56 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'qoutes.q_quiz' doesn't exist' in /home/ubuntu/workspace/Maolsen/Maolsen/Homework/Hw5/submit.php:17
+Stack trace:
+#0 /home/ubuntu/workspace/Maolsen/Maolsen/Homework/Hw5/submit.php(17): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/Maolsen/Maolsen/Homework/Hw5/submit.php on line 17
+[30-Nov-2017 09:30:12 UTC] PHP Fatal error:  Call to a member function execute() on a non-object in /home/ubuntu/workspace/Maolsen/Maolsen/Homework/Hw5/submit.php on line 17
+[30-Nov-2017 09:30:12 UTC] PHP Stack trace:
+[30-Nov-2017 09:30:12 UTC] PHP   1. {main}() /home/ubuntu/workspace/Maolsen/Maolsen/Homework/Hw5/submit.php:0
+[30-Nov-2017 09:34:30 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: parameter was not defined' in /home/ubuntu/workspace/Maolsen/Maolsen/Homework/Hw5/submit.php:17
+Stack trace:
+#0 /home/ubuntu/workspace/Maolsen/Maolsen/Homework/Hw5/submit.php(17): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/Maolsen/Maolsen/Homework/Hw5/submit.php on line 17
+[30-Nov-2017 09:38:08 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: parameter was not defined' in /home/ubuntu/workspace/Maolsen/Maolsen/Homework/Hw5/submit.php:17
+Stack trace:
+#0 /home/ubuntu/workspace/Maolsen/Maolsen/Homework/Hw5/submit.php(17): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/Maolsen/Maolsen/Homework/Hw5/submit.php on line 17
+[30-Nov-2017 09:38:55 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: parameter was not defined' in /home/ubuntu/workspace/Maolsen/Maolsen/Homework/Hw5/submit.php:17
+Stack trace:
+#0 /home/ubuntu/workspace/Maolsen/Maolsen/Homework/Hw5/submit.php(17): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/Maolsen/Maolsen/Homework/Hw5/submit.php on line 17
+[30-Nov-2017 09:41:55 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: parameter was not defined' in /home/ubuntu/workspace/Maolsen/Maolsen/Homework/Hw5/submit.php:17
+Stack trace:
+#0 /home/ubuntu/workspace/Maolsen/Maolsen/Homework/Hw5/submit.php(17): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/Maolsen/Maolsen/Homework/Hw5/submit.php on line 17
+[30-Nov-2017 09:43:14 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: parameter was not defined' in /home/ubuntu/workspace/Maolsen/Maolsen/Homework/Hw5/submit.php:17
+Stack trace:
+#0 /home/ubuntu/workspace/Maolsen/Maolsen/Homework/Hw5/submit.php(17): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/Maolsen/Maolsen/Homework/Hw5/submit.php on line 17
+[30-Nov-2017 09:46:23 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: parameter was not defined' in /home/ubuntu/workspace/Maolsen/Maolsen/Homework/Hw5/submit.php:17
+Stack trace:
+#0 /home/ubuntu/workspace/Maolsen/Maolsen/Homework/Hw5/submit.php(17): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/Maolsen/Maolsen/Homework/Hw5/submit.php on line 17
+[30-Nov-2017 09:46:28 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: parameter was not defined' in /home/ubuntu/workspace/Maolsen/Maolsen/Homework/Hw5/submit.php:17
+Stack trace:
+#0 /home/ubuntu/workspace/Maolsen/Maolsen/Homework/Hw5/submit.php(17): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/Maolsen/Maolsen/Homework/Hw5/submit.php on line 17
+[30-Nov-2017 09:48:09 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: parameter was not defined' in /home/ubuntu/workspace/Maolsen/Maolsen/Homework/Hw5/submit.php:17
+Stack trace:
+#0 /home/ubuntu/workspace/Maolsen/Maolsen/Homework/Hw5/submit.php(17): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/Maolsen/Maolsen/Homework/Hw5/submit.php on line 17
+[30-Nov-2017 09:53:33 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: parameter was not defined' in /home/ubuntu/workspace/Maolsen/Maolsen/Homework/Hw5/submit.php:17
+Stack trace:
+#0 /home/ubuntu/workspace/Maolsen/Maolsen/Homework/Hw5/submit.php(17): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/Maolsen/Maolsen/Homework/Hw5/submit.php on line 17
+[30-Nov-2017 10:07:47 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: parameter was not defined' in /home/ubuntu/workspace/Maolsen/Maolsen/Homework/Hw5/submit.php:17
+Stack trace:
+#0 /home/ubuntu/workspace/Maolsen/Maolsen/Homework/Hw5/submit.php(17): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/Maolsen/Maolsen/Homework/Hw5/submit.php on line 17
+[30-Nov-2017 10:11:20 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: parameter was not defined' in /home/ubuntu/workspace/Maolsen/Maolsen/Homework/Hw5/submit.php:17
+Stack trace:
+#0 /home/ubuntu/workspace/Maolsen/Maolsen/Homework/Hw5/submit.php(17): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/Maolsen/Maolsen/Homework/Hw5/submit.php on line 17
+[30-Nov-2017 10:16:23 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: parameter was not defined' in /home/ubuntu/workspace/Maolsen/Maolsen/Homework/Hw5/submit.php:17
+Stack trace:
+#0 /home/ubuntu/workspace/Maolsen/Maolsen/Homework/Hw5/submit.php(17): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/Maolsen/Maolsen/Homework/Hw5/submit.php on line 17
+[30-Nov-2017 10:18:02 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: parameter was not defined' in /home/ubuntu/workspace/Maolsen/Maolsen/Homework/Hw5/submit.php:17
+Stack trace:
+#0 /home/ubuntu/workspace/Maolsen/Maolsen/Homework/Hw5/submit.php(17): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/Maolsen/Maolsen/Homework/Hw5/submit.php on line 17
+[30-Nov-2017 10:18:07 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: parameter was not defined' in /home/ubuntu/workspace/Maolsen/Maolsen/Homework/Hw5/submit.php:17
+Stack trace:
+#0 /home/ubuntu/workspace/Maolsen/Maolsen/Homework/Hw5/submit.php(17): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/Maolsen/Maolsen/Homework/Hw5/submit.php on line 17
