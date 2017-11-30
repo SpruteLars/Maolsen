@@ -226,13 +226,13 @@ session_start();
              function sub(){
                 
                  var prosent = (points/6)*100;
-                 //console.log(prosent);
-                //$.ajax({
-                //type: "GET",
-                //url: "submit.php",
-                //dataType: "json",
-                //data: { "score":prosent},
-                // });
+                 console.log(prosent);
+                $.ajax({
+                type: "GET",
+                url: "submit.php",
+                dataType: "json",
+                data: { "score":prosent},
+                 });
                 
                 showScore();
              }
@@ -243,7 +243,6 @@ session_start();
                 url: "scoreAPI.php",
                 dataType: "json",
                 success: function(data, status) {
-                    document.getElementById("dbresult").innerHTML = " ";
                     document.getElementById("dbresult").innerHTML = "You have " + data.Total + " tries and a average of " + data.Average + "%";
                 },
             }); 
@@ -312,7 +311,7 @@ session_start();
       
         <p id="turns"></p>
         
-        <button type="button" onclick="sub()">press</button>
+        <button type="button" onclick="sub()">Submit to database</button>
         
         <p id="dbresult"></p>
         </div>

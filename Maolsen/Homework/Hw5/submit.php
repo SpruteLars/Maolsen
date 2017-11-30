@@ -7,14 +7,14 @@ $conn = getDbConnection();
 
     
 
-$sql = 'INSERT INTO q_quiz (userID, score) VALUES (:userID, :score);';
-$np  = array();
-$np[':userId'] = $_SESSION['userId'];
-$np[':score'] = $_GET['score'];
+$sql = 'INSERT INTO q_quiz (userId, score) VALUES (:userId, :score);';
+$nameParameters  = array();
+$nameParameters[':userId'] = $_SESSION['userId'];
+$nameParameters[':score'] = $_GET['score'];
 
 
     $stmt = $conn -> prepare ($sql);
-    $stmt -> execute($np);
+    $stmt -> execute($nameParameters);
     
     
 ?>
