@@ -1,16 +1,17 @@
 body{
     text-align: center;
-    background-color:grey;
+    background-color:blue;
     
 }
 div{
     border-style:solid;
     border-bottom-width: medium;
     background-color: white;     
-    border-radius: 25px;
+    border-radius: 50px;
     
 }
 
 h1{
     font-weight: bold;
+    font-style: italic;
 }

@@ -1,14 +1,14 @@
 body {
     text-align: center;
-    background-color:gray;
+    background-color:blue;
     opacity: 100;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 75px;
+    margin-right: 75px;
     
 }
 #add{
     border-style: solid;
-    border-radius: 25px;
+    border-radius: 50px;
     padding-top: 25px;
     
 }
