@@ -15,6 +15,4 @@ $nameParameters[':score'] = $_GET['score'];
 
     $stmt = $conn -> prepare ($sql);
     $stmt -> execute($nameParameters);
-    
-    
 ?>
