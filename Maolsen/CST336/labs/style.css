@@ -5,4 +5,11 @@ a {
 
 img {
     border-radius:50px;
+    float:left;
+    
+}
+
+aside {
+    
+    display:inline-block;
 }
