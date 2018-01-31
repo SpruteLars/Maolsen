@@ -28,9 +28,14 @@
                  </p>   
             </div>
             </aside>
-        <hr>
+       
         <footer>
             
+            <br>
+            <br>
+            <br>
+            <br>
+            <hr>
              <img src="logo1.png" id="logo"></img>
              
              
