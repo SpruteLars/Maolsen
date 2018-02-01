@@ -15,8 +15,21 @@ aside {
 }
 .border {
     border-style:  Solid;
+    background-color: orange;
     
 }
 nav a:hover{
     font-size: 24px
+}
+nav a{
+    transition: 2s;
+    font-size: 18px;
+}
+
+li {
+    font-weight: bold;
+}
+
+iframe {
+    text-align: center;
 }
